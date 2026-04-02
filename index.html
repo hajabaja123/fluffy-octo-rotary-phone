@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All In Hive — Pure Bee Products</title>
+  <meta name="description" content="All In Hive crafts pure honey jars, nourishing lip balms, and natural beeswax products straight from our hives to your home.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4C20 4 28 10 28 18C28 22.4183 24.4183 26 20 26C15.5817 26 12 22.4183 12 18C12 10 20 4 20 4Z" fill="#D97706"/>
+          <ellipse cx="14" cy="14" rx="4" ry="6" transform="rotate(-30 14 14)" fill="#F59E0B" opacity="0.6"/>
+          <ellipse cx="26" cy="14" rx="4" ry="6" transform="rotate(30 26 14)" fill="#F59E0B" opacity="0.6"/>
+          <circle cx="20" cy="18" r="3" fill="#92400E"/>
+          <path d="M18 26L16 36M22 26L24 36" stroke="#D97706" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span>All In Hive</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-video-wrap" aria-hidden="true">
+      <iframe
+        src="https://www.youtube.com/embed/85kTHwJ1Ju8?autoplay=1&mute=1&loop=1&playlist=85kTHwJ1Ju8&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
+        title="Background video"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <p class="hero-tagline">Pure. Natural. Handcrafted.</p>
+      <h1>From Our Hives<br>To Your Home</h1>
+      <p class="hero-description">We craft premium honey, nourishing lip balms, and versatile beeswax products — all sustainably harvested from happy, healthy bees.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">Shop Products</a>
+        <a href="#about" class="btn btn-outline">Our Story</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Natural</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Hives</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">10k+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="container">
+      <p class="section-tag">Our Collection</p>
+      <h2 class="section-title">Handcrafted Bee Products</h2>
+      <p class="section-subtitle">Every product is made with care, using only the finest ingredients straight from our apiaries.</p>
+      <div class="product-grid">
+
+        <!-- Honey Jar -->
+        <div class="product-card">
+          <div class="product-image honey-jar-bg">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="product-illustration">
+              <rect x="60" y="70" width="80" height="100" rx="8" fill="#D97706"/>
+              <rect x="55" y="60" width="90" height="20" rx="4" fill="#92400E"/>
+              <rect x="70" y="50" width="60" height="15" rx="3" fill="#B45309"/>
+              <rect x="75" y="100" width="50" height="30" rx="4" fill="#FEF3C7"/>
+              <text x="100" y="120" text-anchor="middle" fill="#92400E" font-size="10" font-family="Lora">HONEY</text>
+              <path d="M100 80C100 80 108 85 108 92C108 96 104 98 100 98C96 98 92 96 92 92C92 85 100 80 100 80Z" fill="#F59E0B"/>
+            </svg>
+          </div>
+          <div class="product-info">
+            <h3>Raw Honey Jars</h3>
+            <p>Unfiltered, unpasteurized wildflower honey harvested at peak season. Rich in enzymes and natural goodness.</p>
+            <div class="product-meta">
+              <span class="product-price">From $14.99</span>
+              <a href="#contact" class="btn btn-small">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lip Balm -->
+        <div class="product-card">
+          <div class="product-image lip-balm-bg">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="product-illustration">
+              <rect x="80" y="50" width="40" height="110" rx="20" fill="#D97706"/>
+              <rect x="80" y="50" width="40" height="30" rx="10" fill="#92400E"/>
+              <rect x="85" y="90" width="30" height="40" rx="4" fill="#FEF3C7"/>
+              <text x="100" y="113" text-anchor="middle" fill="#92400E" font-size="7" font-family="Lora">LIP</text>
+              <text x="100" y="122" text-anchor="middle" fill="#92400E" font-size="7" font-family="Lora">BALM</text>
+              <circle cx="100" cy="75" r="5" fill="#F59E0B"/>
+            </svg>
+          </div>
+          <div class="product-info">
+            <h3>Beeswax Lip Balm</h3>
+            <p>Silky smooth lip balm infused with honey and beeswax. Moisturizes, protects, and leaves lips feeling soft all day.</p>
+            <div class="product-meta">
+              <span class="product-price">From $6.99</span>
+              <a href="#contact" class="btn btn-small">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beeswax -->
+        <div class="product-card">
+          <div class="product-image wax-bg">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="product-illustration">
+              <ellipse cx="100" cy="130" rx="50" ry="20" fill="#B45309"/>
+              <ellipse cx="100" cy="100" rx="50" ry="20" fill="#D97706"/>
+              <rect x="50" y="100" width="100" height="30" fill="#D97706"/>
+              <ellipse cx="100" cy="100" rx="50" ry="20" fill="#F59E0B"/>
+              <path d="M80 95C80 95 85 85 100 85C115 85 120 95 120 95" stroke="#D97706" stroke-width="1.5" fill="none"/>
+              <rect x="75" y="88" width="50" height="15" rx="3" fill="#FEF3C7" opacity="0.5"/>
+              <text x="100" y="100" text-anchor="middle" fill="#92400E" font-size="8" font-family="Lora">BEESWAX</text>
+            </svg>
+          </div>
+          <div class="product-info">
+            <h3>Pure Beeswax Blocks</h3>
+            <p>Versatile, all-natural beeswax perfect for candles, crafts, skincare, and wood polish. Sustainably sourced.</p>
+            <div class="product-meta">
+              <span class="product-price">From $9.99</span>
+              <a href="#contact" class="btn btn-small">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="honeycomb-grid" aria-hidden="true">
+          <div class="hex hex-1"></div>
+          <div class="hex hex-2"></div>
+          <div class="hex hex-3"></div>
+          <div class="hex hex-4"></div>
+          <div class="hex hex-5"></div>
+          <div class="hex hex-6"></div>
+          <div class="hex hex-7"></div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-tag">Our Story</p>
+        <h2 class="section-title">Beekeeping With Heart</h2>
+        <p>All In Hive started with a single backyard hive and a passion for sustainable beekeeping. Today, we manage over 50 hives across sun-kissed meadows, producing the finest honey and beeswax products nature can offer.</p>
+        <p>We believe in bee-first beekeeping. Our bees are never over-harvested, never treated with harsh chemicals, and always given the space and care they need to thrive. When bees are happy, the honey shows it.</p>
+        <ul class="about-values">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="value-icon"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>100% Raw & Unfiltered</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="value-icon"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>Sustainably Harvested</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="value-icon"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>Small-Batch Crafted</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="value-icon"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>No Additives or Preservatives</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <p class="section-tag">How It's Made</p>
+      <h2 class="section-title">From Hive to Home</h2>
+      <p class="section-subtitle">Every jar tells a story. Here's the journey our products take before reaching you.</p>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <h3>Tend the Hives</h3>
+          <p>Our beekeepers inspect each hive weekly, ensuring our bees are healthy, well-fed, and thriving in pesticide-free meadows.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <h3>Harvest with Care</h3>
+          <p>We only harvest surplus honey, leaving plenty for the bees. Frames are gently removed by hand with minimal disturbance.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <h3>Extract & Filter</h3>
+          <p>Honey is cold-extracted and lightly strained — never heated or ultra-filtered — preserving all natural enzymes and pollen.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">04</div>
+          <h3>Jar & Deliver</h3>
+          <p>Each jar is hand-filled, labeled, and shipped to your door. From our hive to your table in days, not months.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <p class="section-tag">What People Say</p>
+      <h2 class="section-title">Loved by Thousands</h2>
+      <div class="testimonial-grid">
+        <blockquote class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p>"The best honey I've ever tasted. You can tell it's the real deal — thick, fragrant, and absolutely delicious on morning toast."</p>
+          <footer>
+            <strong>Sarah M.</strong>
+            <span>Honey Jar Customer</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p>"I've tried so many lip balms and this one is on another level. It actually heals chapped lips instead of just sitting on top. Obsessed!"</p>
+          <footer>
+            <strong>James R.</strong>
+            <span>Lip Balm Customer</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" class="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p>"I use the beeswax for homemade candles and leather conditioner. The quality is unmatched — pure, clean, and smells amazing."</p>
+          <footer>
+            <strong>Emily T.</strong>
+            <span>Beeswax Customer</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="section-tag">Get In Touch</p>
+        <h2 class="section-title">We'd Love to Hear From You</h2>
+        <p>Whether you want to place a bulk order, ask about our products, or just say hello — drop us a message.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>hello@allinhive.com</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Meadow Lane Apiary, Countryside</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="event.preventDefault(); document.querySelector('.form-success').style.display='flex'; this.reset();">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option value="general">General Inquiry</option>
+            <option value="order">Place an Order</option>
+            <option value="wholesale">Wholesale / Bulk</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us what you need..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <div class="form-success" style="display:none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="success-icon"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>Thank you! We'll be in touch soon.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4C20 4 28 10 28 18C28 22.4183 24.4183 26 20 26C15.5817 26 12 22.4183 12 18C12 10 20 4 20 4Z" fill="#D97706"/>
+            <ellipse cx="14" cy="14" rx="4" ry="6" transform="rotate(-30 14 14)" fill="#F59E0B" opacity="0.6"/>
+            <ellipse cx="26" cy="14" rx="4" ry="6" transform="rotate(30 26 14)" fill="#F59E0B" opacity="0.6"/>
+            <circle cx="20" cy="18" r="3" fill="#92400E"/>
+            <path d="M18 26L16 36M22 26L24 36" stroke="#D97706" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span>All In Hive</span>
+        </a>
+        <p>Pure bee products, sustainably harvested and handcrafted with love.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#process">Our Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Products</h4>
+        <a href="#products">Raw Honey</a>
+        <a href="#products">Lip Balm</a>
+        <a href="#products">Beeswax</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 All In Hive. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    });
+
+    // Close mobile nav on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        navToggle.classList.remove('active');
+      });
+    });
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.product-card, .step, .testimonial-card, .about-text, .about-visual, .contact-info, .contact-form').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
