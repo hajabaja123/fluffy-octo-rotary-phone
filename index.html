@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All In Hive — Creamy Raw Honey &amp; Bee Products</title>
-  <meta name="description" content="All In Hive crafts creamy raw honey, nourishing lip balms, and pure beeswax — small-batch, sustainably harvested, and delivered to your door.">
+  <title>All In Hive — Raw Honey, Lip Balm &amp; Beeswax</title>
+  <meta name="description" content="All In Hive crafts creamy raw honey, nourishing lip balms, and pure beeswax — small-batch, sustainably harvested from our hives to your home.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -15,7 +15,10 @@
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="nav-logo">All In Hive</a>
+      <a href="#" class="nav-logo">
+        <img src="72676583-2619-493C-BE28-DD1B9C2AB1E8-removebg-preview.png" alt="All In Hive logo" class="nav-logo-img">
+        <span class="nav-logo-text">All In Hive</span>
+      </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
         <span></span>
         <span></span>
@@ -24,6 +27,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#products">Shop</a></li>
         <li><a href="#bundle">Bundles</a></li>
+        <li><a href="#videos">Videos</a></li>
         <li><a href="#about">Our Story</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -31,63 +35,47 @@
     </div>
   </nav>
 
-  <!-- HERO — Split Screen -->
+  <!-- HERO — Full-Screen Immersive Video -->
   <section class="hero" id="hero">
-    <div class="hero-text">
-      <p class="hero-tag">Small-Batch &bull; Raw &bull; Creamy</p>
-      <h1>Honey the Way<br>Nature Intended</h1>
-      <p class="hero-desc">We craft creamy, raw honey and pure beeswax products in small batches — never heated, never blended, always real.</p>
-      <div class="hero-actions">
-        <a href="#products" class="btn btn-primary">Shop Collection</a>
-        <a href="#about" class="btn btn-ghost">Learn More</a>
-      </div>
+    <div class="hero-video-wrap" aria-hidden="true">
+      <iframe
+        src="https://www.youtube.com/embed/85kTHwJ1Ju8?autoplay=1&mute=1&loop=1&playlist=85kTHwJ1Ju8&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
+        title="Background video of bees at work"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
     </div>
-    <div class="hero-media">
-      <div class="hero-video-wrap">
-        <iframe
-          src="https://www.youtube.com/embed/85kTHwJ1Ju8?autoplay=1&mute=1&loop=1&playlist=85kTHwJ1Ju8&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
-          title="Background video"
-          frameborder="0"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <img
-        src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=1200&h=800&fit=crop&q=80"
-        alt="Golden honey dripping from a wooden dipper"
-        class="hero-fallback"
-        loading="eager"
-      >
+    <img
+      src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=1600&h=900&fit=crop&q=80"
+      alt="Golden honey — fallback hero image"
+      class="hero-fallback"
+      loading="eager"
+    >
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="72676583-2619-493C-BE28-DD1B9C2AB1E8-removebg-preview.png" alt="All In Hive logo" class="hero-logo">
+      <p class="hero-tag">Small-Batch &bull; Raw &bull; Unfiltered</p>
+      <h1>From Our Hive<br>To Your Home</h1>
+      <a href="#products" class="btn btn-gold">Shop the Collection</a>
     </div>
   </section>
 
-  <!-- TICKER -->
+  <!-- TICKER — Hive Facts -->
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>DRIZZLE OVER TEA</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER TOAST</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER SMOOTHIES</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER TEA</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER TOAST</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER SMOOTHIES</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER TEA</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER TOAST</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER SMOOTHIES</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER TEA</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER TOAST</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER SMOOTHIES</span>
-      <span>&bull;</span>
+      <span>SAVE THE POLLINATORS</span><span class="ticker-dot">&bull;</span>
+      <span>100% RAW &amp; UNFILTERED</span><span class="ticker-dot">&bull;</span>
+      <span>SUPPORT LOCAL BEEKEEPERS</span><span class="ticker-dot">&bull;</span>
+      <span>FROM OUR HIVE TO YOUR HOME</span><span class="ticker-dot">&bull;</span>
+      <span>SAVE THE POLLINATORS</span><span class="ticker-dot">&bull;</span>
+      <span>100% RAW &amp; UNFILTERED</span><span class="ticker-dot">&bull;</span>
+      <span>SUPPORT LOCAL BEEKEEPERS</span><span class="ticker-dot">&bull;</span>
+      <span>FROM OUR HIVE TO YOUR HOME</span><span class="ticker-dot">&bull;</span>
+      <span>SAVE THE POLLINATORS</span><span class="ticker-dot">&bull;</span>
+      <span>100% RAW &amp; UNFILTERED</span><span class="ticker-dot">&bull;</span>
+      <span>SUPPORT LOCAL BEEKEEPERS</span><span class="ticker-dot">&bull;</span>
+      <span>FROM OUR HIVE TO YOUR HOME</span><span class="ticker-dot">&bull;</span>
     </div>
   </div>
 
@@ -113,7 +101,7 @@
               class="product-img product-img-hover"
               loading="lazy"
             >
-            <button class="quick-add btn btn-primary">Quick Add</button>
+            <button class="quick-add btn btn-gold">Quick Add</button>
           </div>
           <div class="product-info">
             <span class="product-label">Best Seller</span>
@@ -138,7 +126,7 @@
               class="product-img product-img-hover"
               loading="lazy"
             >
-            <button class="quick-add btn btn-primary">Quick Add</button>
+            <button class="quick-add btn btn-gold">Quick Add</button>
           </div>
           <div class="product-info">
             <span class="product-label">Fan Favorite</span>
@@ -163,7 +151,7 @@
               class="product-img product-img-hover"
               loading="lazy"
             >
-            <button class="quick-add btn btn-primary">Quick Add</button>
+            <button class="quick-add btn btn-gold">Quick Add</button>
           </div>
           <div class="product-info">
             <span class="product-label">Versatile</span>
@@ -224,7 +212,58 @@
           <span class="bundle-old-price">$31.97</span>
           <span class="bundle-new-price">$29.99</span>
         </div>
-        <a href="#contact" class="btn btn-primary">Add Starter Kit to Cart</a>
+        <a href="#contact" class="btn btn-gold">Add Starter Kit to Cart</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEE THE BEES IN ACTION — YouTube Shorts -->
+  <section class="videos" id="videos">
+    <div class="container">
+      <p class="section-tag">From the Hive</p>
+      <h2 class="section-title">See the Bees in Action</h2>
+      <p class="section-subtitle">Follow our beekeeping journey on YouTube — raw, real, and straight from the apiary.</p>
+      <div class="video-grid">
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/egnFAGsxReA"
+            title="YouTube Short — Bees at work"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/ndidxqw1gtU"
+            title="YouTube Short — Hive inspection"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/h8b34Kdv8y0"
+            title="YouTube Short — Honey harvest"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/ZHiElopJmBU"
+            title="YouTube Short — Beekeeping life"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -343,7 +382,7 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" placeholder="Tell us what you need..." required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <button type="submit" class="btn btn-gold btn-full">Send Message</button>
         <div class="form-success" style="display:none;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="success-icon"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
           <span>Thank you! We'll be in touch soon.</span>
@@ -356,7 +395,10 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <div class="footer-brand">
-        <a href="#" class="footer-logo">All In Hive</a>
+        <a href="#" class="footer-logo-link">
+          <img src="72676583-2619-493C-BE28-DD1B9C2AB1E8-removebg-preview.png" alt="All In Hive logo" class="footer-logo-img">
+          <span class="footer-logo-text">All In Hive</span>
+        </a>
         <p>Creamy raw honey and pure bee products, small-batch crafted and sustainably harvested.</p>
       </div>
       <div class="footer-links">
@@ -369,8 +411,8 @@
       <div class="footer-links">
         <h4>Company</h4>
         <a href="#about">Our Story</a>
+        <a href="#videos">Videos</a>
         <a href="#contact">Contact</a>
-        <a href="#">Shipping &amp; Returns</a>
         <a href="#">FAQ</a>
       </div>
     </div>
@@ -417,7 +459,7 @@
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.product-card, .testimonial-card, .about-text, .about-images, .contact-info, .contact-form, .bundle-image, .bundle-text').forEach(el => {
+    document.querySelectorAll('.product-card, .testimonial-card, .about-text, .about-images, .contact-info, .contact-form, .bundle-image, .bundle-text, .video-card').forEach(el => {
       el.classList.add('fade-in');
       observer.observe(el);
     });

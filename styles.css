@@ -1,19 +1,21 @@
 /* ========================================
-   ALL IN HIVE — Drizzle-Inspired Design
-   Palette: Milk & Honey
+   ALL IN HIVE — Unique Brand Design
+   Palette: Matched to logo gold/honeycomb
    Typography: Playfair Display + Inter
    ======================================== */
 
 :root {
   --cream: #FDFBF7;
   --cream-dark: #F5F0E8;
-  --gold: #D4A017;
-  --gold-dark: #B8860B;
-  --gold-light: #E8C547;
+  --gold: #C8962E;
+  --gold-dark: #A67A1E;
+  --gold-light: #DEBA5C;
   --charcoal: #2D2D2D;
   --charcoal-light: #555555;
   --white: #FFFFFF;
   --border: #E8E2D6;
+  --wood: #D2BFA0;
+  --wood-dark: #B5A084;
 
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Inter', -apple-system, sans-serif;
@@ -98,6 +100,13 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
   margin-bottom: 20px;
 }
 
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--charcoal-light);
+  max-width: 540px;
+  margin: 0 auto 48px;
+}
+
 /* ========================================
    BUTTONS
    ======================================== */
@@ -123,15 +132,15 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
   outline-offset: 2px;
 }
 
-.btn-primary {
-  background: var(--charcoal);
+.btn-gold {
+  background: var(--gold);
   color: var(--white);
-  border-color: var(--charcoal);
+  border-color: var(--gold);
 }
 
-.btn-primary:hover {
-  background: var(--gold);
-  border-color: var(--gold);
+.btn-gold:hover {
+  background: var(--gold-dark);
+  border-color: var(--gold-dark);
   color: var(--white);
 }
 
@@ -160,7 +169,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
   left: 0;
   right: 0;
   z-index: 50;
-  background: rgba(253, 251, 247, 0.9);
+  background: rgba(253, 251, 247, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid transparent;
@@ -176,19 +185,31 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 24px;
+  padding: 12px 24px;
 }
 
 .nav-logo {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--charcoal);
-  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .nav-logo:hover {
   color: var(--charcoal);
+}
+
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-logo-text {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  letter-spacing: -0.5px;
 }
 
 .nav-links {
@@ -199,7 +220,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
 
 .nav-links a {
   display: block;
-  padding: 8px 18px;
+  padding: 8px 16px;
   font-weight: 400;
   font-size: 0.9rem;
   color: var(--charcoal-light);
@@ -207,21 +228,22 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
 }
 
 .nav-links a:hover {
-  color: var(--charcoal);
+  color: var(--gold);
 }
 
 .nav-cta {
   font-family: var(--font-body);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 500;
   padding: 10px 24px;
-  background: var(--charcoal);
+  background: var(--gold);
   color: var(--white);
+  letter-spacing: 0.5px;
   transition: background 0.2s ease;
 }
 
 .nav-cta:hover {
-  background: var(--gold);
+  background: var(--gold-dark);
   color: var(--white);
 }
 
@@ -258,62 +280,24 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
 }
 
 /* ========================================
-   HERO — Split Screen
+   HERO — Full-Screen Immersive
    ======================================== */
 
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
-  padding-top: 72px;
-}
-
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 80px 60px 80px 80px;
-  background: var(--cream);
-}
-
-.hero-tag {
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: var(--gold);
-  margin-bottom: 24px;
-}
-
-.hero h1 {
-  margin-bottom: 24px;
-  letter-spacing: -1px;
-}
-
-.hero-desc {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: var(--charcoal-light);
-  max-width: 440px;
-  margin-bottom: 40px;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.hero-media {
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  background: var(--charcoal);
+  background: #1a0f00;
 }
 
 .hero-video-wrap {
   position: absolute;
   inset: 0;
   z-index: 1;
+  pointer-events: none;
 }
 
 .hero-video-wrap iframe {
@@ -324,7 +308,6 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
   height: 200%;
   transform: translate(-50%, -50%);
   border: 0;
-  pointer-events: none;
 }
 
 .hero-fallback {
@@ -336,25 +319,72 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
   z-index: 0;
 }
 
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0.55) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: 40px 24px;
+}
+
+.hero-logo {
+  width: 160px;
+  height: auto;
+  margin: 0 auto 32px;
+  filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.4));
+}
+
+.hero-tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--gold-light);
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  color: var(--white);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 36px;
+  letter-spacing: -1px;
+}
+
+.hero .btn-gold {
+  font-size: 0.85rem;
+  padding: 16px 48px;
+  letter-spacing: 1px;
+}
+
 /* ========================================
-   TICKER
+   TICKER — Hive Facts
    ======================================== */
 
 .ticker {
   background: var(--gold);
   color: var(--white);
-  padding: 16px 0;
+  padding: 14px 0;
   overflow: hidden;
   white-space: nowrap;
 }
 
 .ticker-track {
   display: inline-flex;
-  gap: 32px;
-  animation: ticker-scroll 20s linear infinite;
+  gap: 24px;
+  animation: ticker-scroll 25s linear infinite;
   font-family: var(--font-body);
   font-weight: 500;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -363,13 +393,17 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
   flex-shrink: 0;
 }
 
+.ticker-dot {
+  opacity: 0.5;
+}
+
 @keyframes ticker-scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 
 /* ========================================
-   PRODUCTS
+   PRODUCTS — Wood-grain farm-to-table feel
    ======================================== */
 
 .products {
@@ -400,7 +434,23 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
   position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  background: var(--cream-dark);
+  /* Wood-grain texture background via CSS gradient */
+  background:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 10px,
+      rgba(178, 144, 95, 0.06) 10px,
+      rgba(178, 144, 95, 0.06) 11px
+    ),
+    repeating-linear-gradient(
+      85deg,
+      transparent,
+      transparent 20px,
+      rgba(178, 144, 95, 0.04) 20px,
+      rgba(178, 144, 95, 0.04) 22px
+    ),
+    linear-gradient(180deg, #F0E8DA 0%, #E8DCC8 100%);
 }
 
 .product-img {
@@ -445,6 +495,16 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
 .product-info {
   padding: 24px 20px;
   text-align: left;
+  /* Subtle wood texture on info area too */
+  background:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 16px,
+      rgba(178, 144, 95, 0.03) 16px,
+      rgba(178, 144, 95, 0.03) 17px
+    ),
+    var(--white);
 }
 
 .product-label {
@@ -501,7 +561,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
   justify-content: center;
   gap: 56px;
   flex-wrap: wrap;
-  opacity: 0.4;
+  opacity: 0.35;
 }
 
 .logo-item svg {
@@ -587,12 +647,51 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
 }
 
 /* ========================================
+   VIDEOS — YouTube Shorts Grid
+   ======================================== */
+
+.videos {
+  padding: 100px 0;
+  background: var(--white);
+  text-align: center;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.video-card {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--charcoal);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.video-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.video-card iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ========================================
    ABOUT
    ======================================== */
 
 .about {
   padding: 100px 0;
-  background: var(--white);
+  background: var(--cream);
 }
 
 .about-grid {
@@ -659,6 +758,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
 
 .testimonials {
   padding: 100px 0;
+  background: var(--white);
   text-align: center;
 }
 
@@ -670,7 +770,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
 }
 
 .testimonial-card {
-  background: var(--white);
+  background: var(--cream);
   border: 1px solid var(--border);
   padding: 36px 28px;
   text-align: left;
@@ -720,7 +820,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
 
 .contact {
   padding: 100px 0;
-  background: var(--white);
+  background: var(--cream);
 }
 
 .contact-grid {
@@ -758,7 +858,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
 }
 
 .contact-form {
-  background: var(--cream);
+  background: var(--white);
   border: 1px solid var(--border);
   padding: 48px;
 }
@@ -785,7 +885,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
   font-family: var(--font-body);
   font-size: 0.95rem;
   color: var(--charcoal);
-  background: var(--white);
+  background: var(--cream);
   border: 1px solid var(--border);
   border-radius: 0;
   transition: border-color 0.2s ease;
@@ -809,7 +909,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
   gap: 10px;
   margin-top: 16px;
   padding: 14px 16px;
-  background: var(--white);
+  background: var(--cream);
   border: 1px solid var(--border);
   color: var(--charcoal);
   font-weight: 500;
@@ -840,16 +940,28 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
   padding-bottom: 48px;
 }
 
-.footer-logo {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--cream);
-  display: block;
-  margin-bottom: 12px;
+.footer-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
 }
 
-.footer-logo:hover {
+.footer-logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(1.2);
+}
+
+.footer-logo-text {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--cream);
+}
+
+.footer-logo-link:hover .footer-logo-text {
   color: var(--gold-light);
 }
 
@@ -883,7 +995,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
 }
 
 .footer-links a:hover {
-  color: var(--cream);
+  color: var(--gold-light);
 }
 
 .footer-bottom {
@@ -921,6 +1033,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
   html { scroll-behavior: auto; }
   .ticker-track { animation: none; }
   .product-card:hover .quick-add { opacity: 1; transform: none; }
+  .video-card:hover { transform: none; }
 }
 
 /* ========================================
@@ -928,23 +1041,15 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
    ======================================== */
 
 @media (max-width: 1024px) {
-  .hero {
-    grid-template-columns: 1fr;
-    min-height: auto;
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .hero-text {
-    padding: 60px 40px;
-    order: 1;
-  }
-
-  .hero-media {
-    height: 50vh;
-    order: 0;
-  }
-
-  .product-grid,
   .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .video-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -991,12 +1096,8 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
     display: none;
   }
 
-  .hero-text {
-    padding: 48px 24px;
-  }
-
-  .hero-media {
-    height: 40vh;
+  .hero-logo {
+    width: 120px;
   }
 
   .product-grid,
@@ -1005,6 +1106,11 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
   .about-images {
@@ -1037,23 +1143,31 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
     gap: 32px;
   }
 
-  .products, .about, .bundle, .testimonials, .contact {
+  .products, .about, .bundle, .testimonials, .contact, .videos {
     padding: 64px 0;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-actions {
-    flex-direction: column;
+  .hero h1 {
+    font-size: 2.2rem;
   }
 
-  .hero-actions .btn {
-    width: 100%;
-    text-align: center;
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
 
   .bundle-pricing {
     flex-direction: column;
     gap: 4px;
+  }
+
+  .nav-logo-text {
+    font-size: 1.1rem;
+  }
+
+  .nav-logo-img {
+    height: 36px;
   }
 }
