@@ -3,425 +3,251 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All In Hive — Creamy Raw Honey &amp; Bee Products</title>
-  <meta name="description" content="All In Hive crafts creamy raw honey, nourishing lip balms, and pure beeswax — small-batch, sustainably harvested, and delivered to your door.">
+  <title>All In Hive — Pure. Raw. Unfiltered.</title>
+  <meta name="description" content="All In Hive crafts 100% Canadian raw honey, nourishing lip balms, and pure beeswax — small-batch, sustainably harvested from our hives to your home.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- DISCOUNT BAR -->
+  <div class="discount-bar">
+    <p>LIMITED TIME: USE CODE <strong>BEEKEEPER10</strong> FOR 10% OFF!</p>
+  </div>
+
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#" class="nav-logo">All In Hive</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="logo.png" alt="All In Hive" class="nav-logo-img">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#products">Shop</a></li>
-        <li><a href="#bundle">Bundles</a></li>
-        <li><a href="#about">Our Story</a></li>
+        <li><a href="#collection">Shop</a></li>
+        <li><a href="#proof">Videos</a></li>
+        <li><a href="#promise">Our Promise</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="#products" class="nav-cta">Shop Now</a>
+      <a href="#collection" class="nav-cta btn-glow">Shop Now</a>
     </div>
   </nav>
 
-  <!-- HERO — Split Screen -->
-  <section class="hero" id="hero">
-    <div class="hero-text">
-      <p class="hero-tag">Small-Batch &bull; Raw &bull; Creamy</p>
-      <h1>Honey the Way<br>Nature Intended</h1>
-      <p class="hero-desc">We craft creamy, raw honey and pure beeswax products in small batches — never heated, never blended, always real.</p>
-      <div class="hero-actions">
-        <a href="#products" class="btn btn-primary">Shop Collection</a>
-        <a href="#about" class="btn btn-ghost">Learn More</a>
-      </div>
+  <!-- ============================================================
+       SECTION 1 — HERO
+       ============================================================ -->
+  <section class="hero">
+    <div class="hero-video" aria-hidden="true">
+      <iframe src="https://www.youtube.com/embed/85kTHwJ1Ju8?autoplay=1&mute=1&loop=1&playlist=85kTHwJ1Ju8&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1" title="Bees background" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-    <div class="hero-media">
-      <div class="hero-video-wrap">
-        <iframe
-          src="https://www.youtube.com/embed/85kTHwJ1Ju8?autoplay=1&mute=1&loop=1&playlist=85kTHwJ1Ju8&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
-          title="Background video"
-          frameborder="0"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <img
-        src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=1200&h=800&fit=crop&q=80"
-        alt="Golden honey dripping from a wooden dipper"
-        class="hero-fallback"
-        loading="eager"
-      >
+    <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=1600&h=900&fit=crop&q=80" alt="Golden honey" class="hero-fallback" loading="eager">
+    <div class="hero-overlay"></div>
+    <div class="hero-center">
+      <p class="hero-eyebrow">Small-Batch &middot; Sustainably Harvested &middot; Quebec Made</p>
+      <h1>Pure. Raw.<br>Unfiltered.</h1>
+      <p class="hero-sub">Honey &amp; bee products the way nature intended.</p>
+      <a href="#collection" class="btn btn-yellow btn-lg btn-glow">Shop the Collection</a>
     </div>
   </section>
 
-  <!-- TICKER -->
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-track">
-      <span>DRIZZLE OVER TEA</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER TOAST</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER SMOOTHIES</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER TEA</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER TOAST</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER SMOOTHIES</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER TEA</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER TOAST</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER SMOOTHIES</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER TEA</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER TOAST</span>
-      <span>&bull;</span>
-      <span>DRIZZLE OVER SMOOTHIES</span>
-      <span>&bull;</span>
-    </div>
-  </div>
-
-  <!-- PRODUCTS -->
-  <section class="products" id="products">
+  <!-- ============================================================
+       SECTION 2 — THE PROOF (YouTube Shorts)
+       ============================================================ -->
+  <section class="proof" id="proof">
     <div class="container">
-      <p class="section-tag">The Collection</p>
-      <h2 class="section-title">Our Bestsellers</h2>
+      <div class="section-header">
+        <p class="kicker">From the Hive</p>
+        <h2>See the Bees in Action</h2>
+        <p class="lead">Raw, unscripted footage straight from our Quebec apiaries.</p>
+      </div>
+      <div class="video-grid">
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/egnFAGsxReA" title="Short 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/ndidxqw1gtU" title="Short 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/h8b34Kdv8y0" title="Short 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/ZHiElopJmBU" title="Short 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ============================================================
+       SECTION 3 — TRUST BAR
+       ============================================================ -->
+  <section class="trust">
+    <div class="container">
+      <p class="trust-label">As Featured In</p>
+      <div class="trust-row">
+        <span class="trust-mark" style="font-family:'Georgia',serif;font-weight:700;font-size:20px;">Vogue</span>
+        <span class="trust-mark" style="font-weight:700;letter-spacing:4px;font-size:16px;">GOOP</span>
+        <span class="trust-mark" style="font-family:'Georgia',serif;font-weight:600;font-size:17px;">Bon App&eacute;tit</span>
+        <span class="trust-mark" style="font-weight:700;letter-spacing:4px;font-size:15px;">FORBES</span>
+        <span class="trust-mark" style="font-family:'Georgia',serif;font-style:italic;font-weight:600;font-size:17px;">Food &amp; Wine</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ============================================================
+       SECTION 4 — THE COLLECTION
+       ============================================================ -->
+  <section class="collection" id="collection">
+    <div class="container">
+      <div class="section-header">
+        <p class="kicker">The Collection</p>
+        <h2>Our Bestsellers</h2>
+      </div>
       <div class="product-grid">
 
-        <!-- Honey Jar -->
-        <div class="product-card">
-          <div class="product-image-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&h=600&fit=crop&q=80"
-              alt="Raw creamy honey in a glass jar with wooden dipper"
-              class="product-img product-img-main"
-              loading="lazy"
-            >
-            <img
-              src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=600&h=600&fit=crop&q=80"
-              alt="Honey drizzled on toast with fresh fruit"
-              class="product-img product-img-hover"
-              loading="lazy"
-            >
-            <button class="quick-add btn btn-primary">Quick Add</button>
+        <a href="products/honey-jar.html" class="p-card">
+          <div class="p-card-img">
+            <span class="badge-urgent">Low Stock</span>
+            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&h=600&fit=crop&q=80" alt="Creamy raw honey jar" class="img-main" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc?w=600&h=600&fit=crop&q=80" alt="Honeycomb close-up" class="img-hover" loading="lazy">
+            <span class="p-card-cta btn-glow">Shop Now &rarr;</span>
           </div>
-          <div class="product-info">
-            <span class="product-label">Best Seller</span>
+          <div class="p-card-body">
+            <span class="p-card-tag">Best Seller</span>
             <h3>Creamy Raw Honey</h3>
-            <p class="product-desc">Unfiltered, unpasteurized wildflower honey. Thick, creamy, and bursting with natural enzymes.</p>
-            <span class="product-price">$14.99</span>
+            <p>100% raw, unfiltered Quebec wildflower honey. Small-batch harvested at peak season.</p>
+            <div class="p-card-footer">
+              <span class="p-card-price">$14.99</span>
+              <span class="p-card-secure"><svg viewBox="0 0 16 16" fill="currentColor" width="12" height="12"><path d="M8 1a4 4 0 00-4 4v2H3a1 1 0 00-1 1v6a1 1 0 001 1h10a1 1 0 001-1V8a1 1 0 00-1-1h-1V5a4 4 0 00-4-4zm2 6H6V5a2 2 0 114 0v2z"/></svg> Secure Checkout</span>
+            </div>
           </div>
-        </div>
+        </a>
 
-        <!-- Lip Balm -->
-        <div class="product-card">
-          <div class="product-image-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1599305090598-fe179d501227?w=600&h=600&fit=crop&q=80"
-              alt="Natural beeswax lip balm in a small round tin"
-              class="product-img product-img-main"
-              loading="lazy"
-            >
-            <img
-              src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=600&fit=crop&q=80"
-              alt="Woman applying natural lip balm"
-              class="product-img product-img-hover"
-              loading="lazy"
-            >
-            <button class="quick-add btn btn-primary">Quick Add</button>
+        <a href="products/lip-balm.html" class="p-card">
+          <div class="p-card-img">
+            <span class="badge-urgent">Low Stock</span>
+            <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?w=600&h=600&fit=crop&q=80" alt="Honey lip balm tin" class="img-main" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc?w=600&h=600&fit=crop&q=80" alt="Natural honeycomb" class="img-hover" loading="lazy">
+            <span class="p-card-cta btn-glow">Shop Now &rarr;</span>
           </div>
-          <div class="product-info">
-            <span class="product-label">Fan Favorite</span>
+          <div class="p-card-body">
+            <span class="p-card-tag">Fan Favorite</span>
             <h3>Honey Lip Balm</h3>
-            <p class="product-desc">Silky beeswax balm infused with raw honey. Deeply moisturizes and protects all day long.</p>
-            <span class="product-price">$6.99</span>
+            <p>Silky beeswax balm infused with raw honey. Heals and protects all day long.</p>
+            <div class="p-card-footer">
+              <span class="p-card-price">$6.99</span>
+              <span class="p-card-secure"><svg viewBox="0 0 16 16" fill="currentColor" width="12" height="12"><path d="M8 1a4 4 0 00-4 4v2H3a1 1 0 00-1 1v6a1 1 0 001 1h10a1 1 0 001-1V8a1 1 0 00-1-1h-1V5a4 4 0 00-4-4zm2 6H6V5a2 2 0 114 0v2z"/></svg> Secure Checkout</span>
+            </div>
           </div>
-        </div>
+        </a>
 
-        <!-- Beeswax -->
-        <div class="product-card">
-          <div class="product-image-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=600&h=600&fit=crop&q=80"
-              alt="Pure golden beeswax blocks stacked together"
-              class="product-img product-img-main"
-              loading="lazy"
-            >
-            <img
-              src="https://images.unsplash.com/photo-1602928321679-560bb453f190?w=600&h=600&fit=crop&q=80"
-              alt="Handmade beeswax candles on a wooden table"
-              class="product-img product-img-hover"
-              loading="lazy"
-            >
-            <button class="quick-add btn btn-primary">Quick Add</button>
+        <a href="products/beeswax.html" class="p-card">
+          <div class="p-card-img">
+            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=600&h=600&fit=crop&q=80" alt="Pure beeswax blocks" class="img-main" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1602928321679-560bb453f190?w=600&h=600&fit=crop&q=80" alt="Beeswax candles" class="img-hover" loading="lazy">
+            <span class="p-card-cta btn-glow">Shop Now &rarr;</span>
           </div>
-          <div class="product-info">
-            <span class="product-label">Versatile</span>
+          <div class="p-card-body">
+            <span class="p-card-tag">Versatile</span>
             <h3>Pure Beeswax Block</h3>
-            <p class="product-desc">Food-grade beeswax for candles, crafts, skincare, and wood polish. Sustainably sourced.</p>
-            <span class="product-price">$9.99</span>
+            <p>Food-grade beeswax for candles, crafts, skincare, and wood polish. Sustainably sourced.</p>
+            <div class="p-card-footer">
+              <span class="p-card-price">$9.99</span>
+              <span class="p-card-secure"><svg viewBox="0 0 16 16" fill="currentColor" width="12" height="12"><path d="M8 1a4 4 0 00-4 4v2H3a1 1 0 00-1 1v6a1 1 0 001 1h10a1 1 0 001-1V8a1 1 0 00-1-1h-1V5a4 4 0 00-4-4zm2 6H6V5a2 2 0 114 0v2z"/></svg> Secure Checkout</span>
+            </div>
           </div>
-        </div>
+        </a>
 
       </div>
     </div>
   </section>
 
-  <!-- AS SEEN IN -->
-  <section class="seen-in">
+  <hr class="divider">
+
+  <!-- ============================================================
+       SECTION 5 — OUR PROMISE
+       ============================================================ -->
+  <section class="promise" id="promise">
     <div class="container">
-      <p class="seen-in-label">As Seen In</p>
-      <div class="seen-in-logos">
-        <div class="logo-item">
-          <svg viewBox="0 0 120 24" fill="currentColor"><text x="0" y="18" font-family="'Playfair Display', serif" font-size="18" font-weight="700">Vogue</text></svg>
+      <div class="section-header">
+        <p class="kicker">Our Promise</p>
+        <h2>Why All In Hive</h2>
+      </div>
+      <div class="promise-row">
+        <div class="promise-item">
+          <div class="promise-num">01</div>
+          <h3>100% Raw Honey</h3>
+          <p>Never heated. Never blended. Never imported. Pure raw honey from our own hives, exactly as the bees made it.</p>
         </div>
-        <div class="logo-item">
-          <svg viewBox="0 0 180 24" fill="currentColor"><text x="0" y="18" font-family="'Inter', sans-serif" font-size="16" font-weight="600">GOOP</text></svg>
+        <div class="promise-item">
+          <div class="promise-num">02</div>
+          <h3>Sustainably Sourced</h3>
+          <p>Bee-first beekeeping. We only harvest surplus honey, leaving plenty for the hive. No chemicals, no shortcuts, no compromises.</p>
         </div>
-        <div class="logo-item">
-          <svg viewBox="0 0 180 24" fill="currentColor"><text x="0" y="18" font-family="'Playfair Display', serif" font-size="16" font-weight="600">Bon Appétit</text></svg>
-        </div>
-        <div class="logo-item">
-          <svg viewBox="0 0 200 24" fill="currentColor"><text x="0" y="18" font-family="'Inter', sans-serif" font-size="14" font-weight="700" letter-spacing="3">FORBES</text></svg>
-        </div>
-        <div class="logo-item">
-          <svg viewBox="0 0 220 24" fill="currentColor"><text x="0" y="18" font-family="'Playfair Display', serif" font-size="16" font-style="italic" font-weight="600">Food &amp; Wine</text></svg>
+        <div class="promise-item">
+          <div class="promise-num">03</div>
+          <h3>Quebec Made</h3>
+          <p>Proudly crafted in Quebec, Canada. Every product is small-batch made with local ingredients and absolutely zero additives.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- BUNDLE -->
-  <section class="bundle" id="bundle">
-    <div class="container bundle-grid">
-      <div class="bundle-image">
-        <img
-          src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&h=800&fit=crop&q=80"
-          alt="The Hive Starter Kit — honey jar, lip balm, and beeswax block arranged on a wooden surface"
-          loading="lazy"
-        >
-      </div>
-      <div class="bundle-text">
-        <span class="product-label">Save 15%</span>
-        <h2>The Hive Starter Kit</h2>
-        <p>Everything you need to experience the hive. This curated set includes one jar of our Creamy Raw Honey, one Honey Lip Balm, and one Pure Beeswax Block — beautifully packaged and ready to gift (or keep for yourself).</p>
-        <ul class="bundle-includes">
-          <li>1x Creamy Raw Honey Jar</li>
-          <li>1x Honey Lip Balm</li>
-          <li>1x Pure Beeswax Block</li>
-        </ul>
-        <div class="bundle-pricing">
-          <span class="bundle-old-price">$31.97</span>
-          <span class="bundle-new-price">$29.99</span>
-        </div>
-        <a href="#contact" class="btn btn-primary">Add Starter Kit to Cart</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="container about-grid">
-      <div class="about-images">
-        <img
-          src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=600&h=750&fit=crop&q=80"
-          alt="Beekeeper tending to hive frames in a sunlit meadow"
-          class="about-img about-img-1"
-          loading="lazy"
-        >
-        <img
-          src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=400&h=500&fit=crop&q=80"
-          alt="Close-up of a honeycomb full of golden honey"
-          class="about-img about-img-2"
-          loading="lazy"
-        >
-      </div>
-      <div class="about-text">
-        <p class="section-tag">Our Story</p>
-        <h2 class="section-title">Beekeeping With Heart</h2>
-        <p>All In Hive started with a single backyard hive and a deep respect for the craft. Today, we manage over 50 hives across pesticide-free meadows, producing the creamiest raw honey you'll ever taste.</p>
-        <p>We believe in bee-first beekeeping. Our bees are never over-harvested, never treated with harsh chemicals, and always given the space they need to thrive. When bees are happy, you can taste it.</p>
-        <div class="about-stats">
-          <div class="about-stat">
-            <span class="about-stat-num">50+</span>
-            <span class="about-stat-label">Active Hives</span>
-          </div>
-          <div class="about-stat">
-            <span class="about-stat-num">100%</span>
-            <span class="about-stat-label">Raw &amp; Unfiltered</span>
-          </div>
-          <div class="about-stat">
-            <span class="about-stat-num">10k+</span>
-            <span class="about-stat-label">Happy Customers</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <div class="container">
-      <p class="section-tag">Reviews</p>
-      <h2 class="section-title">What Our Customers Say</h2>
-      <div class="testimonial-grid">
-        <blockquote class="testimonial-card">
-          <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>"The creamiest honey I've ever tasted. I drizzle it on everything — toast, tea, yogurt. You can genuinely taste the difference."</p>
-          <footer>
-            <strong>Sarah M.</strong>
-            <span>Verified Buyer</span>
-          </footer>
-        </blockquote>
-        <blockquote class="testimonial-card">
-          <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>"This lip balm is on another level. It actually heals chapped lips instead of just sitting on top. The honey scent is divine."</p>
-          <footer>
-            <strong>James R.</strong>
-            <span>Verified Buyer</span>
-          </footer>
-        </blockquote>
-        <blockquote class="testimonial-card">
-          <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>"Bought the Starter Kit as a gift and ended up keeping it. The beeswax candles I made from the block smell absolutely incredible."</p>
-          <footer>
-            <strong>Emily T.</strong>
-            <span>Verified Buyer</span>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
+  <hr class="divider">
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container contact-grid">
-      <div class="contact-info">
-        <p class="section-tag">Get In Touch</p>
-        <h2 class="section-title">We'd Love to<br>Hear From You</h2>
-        <p>Questions about our products, wholesale inquiries, or just want to say hello — we're here for it.</p>
+      <div class="contact-text">
+        <p class="kicker">Get In Touch</p>
+        <h2>We'd Love to<br>Hear From You</h2>
+        <p class="contact-lead">Questions, wholesale, or just want to say hello.</p>
         <div class="contact-details">
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>hello@allinhive.com</span>
-          </div>
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Meadow Lane Apiary, Countryside</span>
-          </div>
+          <div class="c-detail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>hello@allinhive.com</span></div>
+          <div class="c-detail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Quebec, Canada</span></div>
         </div>
       </div>
-      <form class="contact-form" onsubmit="event.preventDefault(); document.querySelector('.form-success').style.display='flex'; this.reset();">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
-        </div>
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <select id="subject" name="subject">
-            <option value="general">General Inquiry</option>
-            <option value="order">Place an Order</option>
-            <option value="wholesale">Wholesale / Bulk</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell us what you need..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-        <div class="form-success" style="display:none;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="success-icon"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <span>Thank you! We'll be in touch soon.</span>
-        </div>
+      <form class="contact-form" onsubmit="event.preventDefault(); document.querySelector('.form-ok').style.display='flex'; this.reset();">
+        <div class="fg"><label for="name">Name</label><input type="text" id="name" placeholder="Your name" required></div>
+        <div class="fg"><label for="email">Email</label><input type="email" id="email" placeholder="you@example.com" required></div>
+        <div class="fg"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Tell us what you need..." required></textarea></div>
+        <button type="submit" class="btn btn-yellow btn-full btn-glow">Send Message</button>
+        <div class="form-ok" style="display:none;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Thank you! We'll be in touch soon.</span></div>
       </form>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-content">
+  <footer class="footer">
+    <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="#" class="footer-logo">All In Hive</a>
-        <p>Creamy raw honey and pure bee products, small-batch crafted and sustainably harvested.</p>
+        <a href="#"><img src="logo.png" alt="All In Hive" class="footer-logo"></a>
+        <p>Pure Quebec raw honey and bee products, small-batch crafted and sustainably harvested.</p>
       </div>
-      <div class="footer-links">
+      <div class="footer-col">
         <h4>Shop</h4>
-        <a href="#products">Creamy Raw Honey</a>
-        <a href="#products">Honey Lip Balm</a>
-        <a href="#products">Pure Beeswax</a>
-        <a href="#bundle">Hive Starter Kit</a>
+        <a href="products/honey-jar.html">Creamy Raw Honey</a>
+        <a href="products/lip-balm.html">Honey Lip Balm</a>
+        <a href="products/beeswax.html">Pure Beeswax</a>
       </div>
-      <div class="footer-links">
+      <div class="footer-col">
         <h4>Company</h4>
-        <a href="#about">Our Story</a>
+        <a href="#proof">Videos</a>
+        <a href="#promise">Our Promise</a>
         <a href="#contact">Contact</a>
-        <a href="#">Shipping &amp; Returns</a>
-        <a href="#">FAQ</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>&copy; 2026 All In Hive. All rights reserved.</p>
+      <p>&copy; 2026 All In Hive. All rights reserved. It's All About The Bees.</p>
     </div>
   </footer>
 
   <script>
-    // Mobile nav toggle
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      navToggle.classList.toggle('active');
-    });
-
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        navToggle.classList.remove('active');
-      });
-    });
-
-    // Navbar scroll
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 50);
-    });
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    });
-
-    // Scroll reveal
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.product-card, .testimonial-card, .about-text, .about-images, .contact-info, .contact-form, .bundle-image, .bundle-text').forEach(el => {
-      el.classList.add('fade-in');
-      observer.observe(el);
-    });
+    const nt=document.getElementById('navToggle'),nl=document.getElementById('navLinks');
+    nt.addEventListener('click',()=>{nl.classList.toggle('active');nt.classList.toggle('active')});
+    nl.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{nl.classList.remove('active');nt.classList.remove('active')}));
+    window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50));
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})}));
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),{threshold:.08});
+    document.querySelectorAll('.p-card,.promise-item,.video-card,.contact-text,.contact-form').forEach(el=>{el.classList.add('reveal');io.observe(el)});
   </script>
-
 </body>
 </html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pure Beeswax Block — All In Hive</title>
+  <meta name="description" content="Versatile, food-grade beeswax for candles, crafts, skincare, and more. Sustainably sourced and small-batch refined.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="product-page.css">
+</head>
+<body>
+<div class="discount-bar"><p>LIMITED TIME: USE CODE <strong>BEEKEEPER10</strong> FOR 10% OFF!</p></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <img src="../logo.png" alt="All In Hive" class="nav-logo-img">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#collection">Shop</a></li>
+        <li><a href="../index.html#proof">Videos</a></li>
+        <li><a href="../index.html#promise">Our Promise</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <a href="../index.html#collection" class="nav-cta btn-glow">Shop Now</a>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="../index.html">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="../index.html#collection">Shop</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>Pure Beeswax Block</span>
+    </div>
+  </div>
+
+  <!-- PRODUCT DETAIL -->
+  <section class="product-detail">
+    <div class="container product-detail-grid">
+      <div class="product-gallery">
+        <div class="product-main-image">
+          <img
+            src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=800&h=800&fit=crop&q=80"
+            alt="Pure golden beeswax blocks stacked together"
+            id="mainImage"
+          >
+        </div>
+        <div class="product-thumbnails">
+          <button class="thumb active" onclick="changeImage(this, 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=800&h=800&fit=crop&q=80')">
+            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=150&h=150&fit=crop&q=80" alt="Beeswax blocks">
+          </button>
+          <button class="thumb" onclick="changeImage(this, 'https://images.unsplash.com/photo-1602928321679-560bb453f190?w=800&h=800&fit=crop&q=80')">
+            <img src="https://images.unsplash.com/photo-1602928321679-560bb453f190?w=150&h=150&fit=crop&q=80" alt="Beeswax candles on table">
+          </button>
+          <button class="thumb" onclick="changeImage(this, 'https://images.unsplash.com/photo-1471943311424-646960669fbc?w=800&h=800&fit=crop&q=80')">
+            <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc?w=150&h=150&fit=crop&q=80" alt="Natural honeycomb texture">
+          </button>
+        </div>
+      </div>
+
+      <div class="product-info-detail">
+        <h1>Pure Beeswax Block</h1>
+        <div class="product-rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="rating-count">76 Reviews</span>
+        </div>
+        <p class="product-price-detail">$9.99</p>
+
+        <p class="product-description">
+          Our food-grade beeswax is sustainably sourced from the same hives that produce our
+          raw honey. Each block is carefully filtered and refined in small batches to retain
+          its warm golden color and subtle, natural honey aroma.
+        </p>
+        <p class="product-description">
+          Whether you're pouring hand-dipped candles, mixing DIY skincare, conditioning leather,
+          or polishing wood, this wax delivers a clean, long-lasting finish every time. Pure,
+          versatile, and crafted with the same care we put into everything at the hive.
+        </p>
+
+        <ul class="product-features">
+          <li>100% Pure Food-Grade Beeswax</li>
+          <li>Sustainably Sourced from Our Hives</li>
+          <li>Small-Batch Refined</li>
+          <li>Perfect for Candles, Crafts &amp; Skincare</li>
+          <li>Natural Honey Aroma</li>
+        </ul>
+
+        <div class="product-options">
+          <div class="option-group">
+            <label for="weight">Weight</label>
+            <select id="weight">
+              <option value="4oz">4 oz Block — $9.99</option>
+              <option value="8oz">8 oz Block — $16.99</option>
+              <option value="1lb">1 lb Block — $27.99</option>
+            </select>
+          </div>
+          <div class="option-group">
+            <label for="quantity">Quantity</label>
+            <div class="quantity-selector">
+              <button class="qty-btn" onclick="changeQty(-1)" aria-label="Decrease quantity">-</button>
+              <input type="number" id="quantity" value="1" min="1" max="20" readonly>
+              <button class="qty-btn" onclick="changeQty(1)" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        <div class="cart-confirmation" id="cartConfirmation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>Added to cart!</span>
+        </div>
+
+        <a href="../index.html" class="back-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="15 18 9 12 15 6"/></svg>
+          Back to Home
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html"><img src="../logo.png" alt="All In Hive" class="footer-logo"></a>
+        <p>Pure Quebec raw honey and bee products, small-batch crafted and sustainably harvested.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="honey-jar.html">Creamy Raw Honey</a>
+        <a href="lip-balm.html">Honey Lip Balm</a>
+        <a href="beeswax.html">Pure Beeswax</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="../index.html#proof">Videos</a>
+        <a href="../index.html#promise">Our Promise</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 All In Hive. All rights reserved. It's All About The Bees.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('active');
+      document.getElementById('navToggle').classList.toggle('active');
+    });
+
+    function changeImage(thumb, src) {
+      document.getElementById('mainImage').src = src;
+      document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+    }
+
+    function changeQty(delta) {
+      const input = document.getElementById('quantity');
+      const newVal = Math.max(1, Math.min(20, parseInt(input.value) + delta));
+      input.value = newVal;
+    }
+
+    function addToCart() {
+      const conf = document.getElementById('cartConfirmation');
+      conf.classList.add('show');
+      setTimeout(() => conf.classList.remove('show'), 2500);
+    }
+  </script>
+
+</body>
+</html>
