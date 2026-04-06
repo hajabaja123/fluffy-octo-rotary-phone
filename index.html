@@ -7,28 +7,28 @@
   <meta name="description" content="All In Hive crafts 100% Canadian raw honey, nourishing lip balms, and pure beeswax — small-batch, sustainably harvested from our hives to your home.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- DISCOUNT BAR -->
-  <div class="discount-bar" id="discountBar">
+  <div class="discount-bar">
     <p>LIMITED TIME: USE CODE <strong>BEEKEEPER10</strong> FOR 10% OFF!</p>
   </div>
 
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
-    <div class="container nav-container">
+    <div class="container nav-inner">
       <a href="#" class="nav-logo">
-        <img src="logo.png" alt="All In Hive logo" class="nav-logo-img">
+        <img src="logo.png" alt="All In Hive" class="nav-logo-img">
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#collection">Shop</a></li>
-        <li><a href="#hive-lab">Videos</a></li>
+        <li><a href="#proof">Videos</a></li>
         <li><a href="#promise">Our Promise</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -36,113 +36,122 @@
     </div>
   </nav>
 
-  <!-- SECTION 1: HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-video-wrap" aria-hidden="true">
-      <iframe src="https://www.youtube.com/embed/85kTHwJ1Ju8?autoplay=1&mute=1&loop=1&playlist=85kTHwJ1Ju8&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1" title="Bees at work background video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <!-- ============================================================
+       SECTION 1 — HERO
+       ============================================================ -->
+  <section class="hero">
+    <div class="hero-video" aria-hidden="true">
+      <iframe src="https://www.youtube.com/embed/85kTHwJ1Ju8?autoplay=1&mute=1&loop=1&playlist=85kTHwJ1Ju8&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1" title="Bees background" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-    <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=1600&h=900&fit=crop&q=80" alt="Golden honey fallback" class="hero-fallback" loading="eager">
+    <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=1600&h=900&fit=crop&q=80" alt="Golden honey" class="hero-fallback" loading="eager">
     <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Pure. Raw. Unfiltered.</h1>
-      <p class="hero-sub">Small-batch honey &amp; bee products, straight from our Quebec hives to your home.</p>
-      <a href="#collection" class="btn btn-yellow btn-hero btn-glow">Shop the Collection</a>
+    <div class="hero-center">
+      <p class="hero-eyebrow">Small-Batch &middot; Sustainably Harvested &middot; Quebec Made</p>
+      <h1>Pure. Raw.<br>Unfiltered.</h1>
+      <p class="hero-sub">Honey &amp; bee products the way nature intended.</p>
+      <a href="#collection" class="btn btn-yellow btn-lg btn-glow">Shop the Collection</a>
     </div>
   </section>
 
-  <!-- SECTION 2: TRUST BAR -->
-  <section class="trust-bar">
+  <!-- ============================================================
+       SECTION 2 — THE PROOF (YouTube Shorts)
+       ============================================================ -->
+  <section class="proof" id="proof">
     <div class="container">
-      <div class="trust-logos">
-        <div class="trust-logo"><svg viewBox="0 0 100 28" fill="currentColor"><text x="0" y="22" font-family="'Playfair Display',serif" font-size="22" font-weight="700">Vogue</text></svg></div>
-        <div class="trust-logo"><svg viewBox="0 0 100 28" fill="currentColor"><text x="0" y="22" font-family="'Inter',sans-serif" font-size="18" font-weight="700" letter-spacing="4">GOOP</text></svg></div>
-        <div class="trust-logo"><svg viewBox="0 0 160 28" fill="currentColor"><text x="0" y="22" font-family="'Playfair Display',serif" font-size="18" font-weight="600">Bon Appétit</text></svg></div>
-        <div class="trust-logo"><svg viewBox="0 0 130 28" fill="currentColor"><text x="0" y="22" font-family="'Inter',sans-serif" font-size="16" font-weight="700" letter-spacing="4">FORBES</text></svg></div>
-        <div class="trust-logo"><svg viewBox="0 0 170 28" fill="currentColor"><text x="0" y="22" font-family="'Playfair Display',serif" font-size="18" font-style="italic" font-weight="600">Food &amp; Wine</text></svg></div>
+      <div class="section-header">
+        <p class="kicker">From the Hive</p>
+        <h2>See the Bees in Action</h2>
+        <p class="lead">Raw, unscripted footage straight from our Quebec apiaries.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- SECTION 3: FROM THE HIVE -->
-  <section class="hive-lab" id="hive-lab">
-    <div class="container">
-      <p class="section-tag">From the Hive</p>
-      <h2 class="section-title">See the Bees in Action</h2>
-      <p class="section-sub">Raw footage from our Quebec apiaries.</p>
       <div class="video-grid">
-        <div class="video-card"><iframe src="https://www.youtube.com/embed/egnFAGsxReA" title="YouTube Short 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-        <div class="video-card"><iframe src="https://www.youtube.com/embed/ndidxqw1gtU" title="YouTube Short 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-        <div class="video-card"><iframe src="https://www.youtube.com/embed/h8b34Kdv8y0" title="YouTube Short 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-        <div class="video-card"><iframe src="https://www.youtube.com/embed/ZHiElopJmBU" title="YouTube Short 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/egnFAGsxReA" title="Short 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/ndidxqw1gtU" title="Short 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/h8b34Kdv8y0" title="Short 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/ZHiElopJmBU" title="Short 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION 4: PRODUCT SHOWCASE -->
+  <hr class="divider">
+
+  <!-- ============================================================
+       SECTION 3 — TRUST BAR
+       ============================================================ -->
+  <section class="trust">
+    <div class="container">
+      <p class="trust-label">As Featured In</p>
+      <div class="trust-row">
+        <span class="trust-mark" style="font-family:'Georgia',serif;font-weight:700;font-size:20px;">Vogue</span>
+        <span class="trust-mark" style="font-weight:700;letter-spacing:4px;font-size:16px;">GOOP</span>
+        <span class="trust-mark" style="font-family:'Georgia',serif;font-weight:600;font-size:17px;">Bon App&eacute;tit</span>
+        <span class="trust-mark" style="font-weight:700;letter-spacing:4px;font-size:15px;">FORBES</span>
+        <span class="trust-mark" style="font-family:'Georgia',serif;font-style:italic;font-weight:600;font-size:17px;">Food &amp; Wine</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ============================================================
+       SECTION 4 — THE COLLECTION
+       ============================================================ -->
   <section class="collection" id="collection">
     <div class="container">
-      <p class="section-tag">The Collection</p>
-      <h2 class="section-title">Our Bestsellers</h2>
+      <div class="section-header">
+        <p class="kicker">The Collection</p>
+        <h2>Our Bestsellers</h2>
+      </div>
       <div class="product-grid">
 
-        <a href="products/honey-jar.html" class="product-card">
-          <div class="product-image-wrap">
-            <span class="badge-stock">Low Stock</span>
-            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&h=600&fit=crop&q=80" alt="Creamy raw honey in a glass jar" class="product-img product-img-main" loading="lazy">
-            <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc?w=600&h=600&fit=crop&q=80" alt="Honeycomb dripping with golden honey" class="product-img product-img-hover" loading="lazy">
-            <span class="quick-add btn-glow">Shop Now &rarr;</span>
+        <a href="products/honey-jar.html" class="p-card">
+          <div class="p-card-img">
+            <span class="badge-urgent">Low Stock</span>
+            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&h=600&fit=crop&q=80" alt="Creamy raw honey jar" class="img-main" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc?w=600&h=600&fit=crop&q=80" alt="Honeycomb close-up" class="img-hover" loading="lazy">
+            <span class="p-card-cta btn-glow">Shop Now &rarr;</span>
           </div>
-          <div class="product-info">
-            <span class="product-label">Best Seller</span>
+          <div class="p-card-body">
+            <span class="p-card-tag">Best Seller</span>
             <h3>Creamy Raw Honey</h3>
-            <p class="product-desc">100% raw, unfiltered Quebec wildflower honey. Small-batch harvested at peak season.</p>
-            <div class="product-bottom">
-              <span class="product-price">$14.99</span>
-              <div class="secure-badge">
-                <svg viewBox="0 0 16 16" fill="currentColor" width="14" height="14"><path d="M8 1a4 4 0 0 0-4 4v2H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V5a4 4 0 0 0-4-4zm2 6H6V5a2 2 0 1 1 4 0v2z"/></svg>
-                <span>Secure Checkout</span>
-              </div>
+            <p>100% raw, unfiltered Quebec wildflower honey. Small-batch harvested at peak season.</p>
+            <div class="p-card-footer">
+              <span class="p-card-price">$14.99</span>
+              <span class="p-card-secure"><svg viewBox="0 0 16 16" fill="currentColor" width="12" height="12"><path d="M8 1a4 4 0 00-4 4v2H3a1 1 0 00-1 1v6a1 1 0 001 1h10a1 1 0 001-1V8a1 1 0 00-1-1h-1V5a4 4 0 00-4-4zm2 6H6V5a2 2 0 114 0v2z"/></svg> Secure Checkout</span>
             </div>
           </div>
         </a>
 
-        <a href="products/lip-balm.html" class="product-card">
-          <div class="product-image-wrap">
-            <span class="badge-stock">Low Stock</span>
-            <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?w=600&h=600&fit=crop&q=80" alt="Natural beeswax lip balm tin" class="product-img product-img-main" loading="lazy">
-            <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=600&h=600&fit=crop&q=80" alt="Natural skincare ingredients with honey" class="product-img product-img-hover" loading="lazy">
-            <span class="quick-add btn-glow">Shop Now &rarr;</span>
+        <a href="products/lip-balm.html" class="p-card">
+          <div class="p-card-img">
+            <span class="badge-urgent">Low Stock</span>
+            <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?w=600&h=600&fit=crop&q=80" alt="Honey lip balm tin" class="img-main" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc?w=600&h=600&fit=crop&q=80" alt="Natural honeycomb" class="img-hover" loading="lazy">
+            <span class="p-card-cta btn-glow">Shop Now &rarr;</span>
           </div>
-          <div class="product-info">
-            <span class="product-label">Fan Favorite</span>
+          <div class="p-card-body">
+            <span class="p-card-tag">Fan Favorite</span>
             <h3>Honey Lip Balm</h3>
-            <p class="product-desc">Silky beeswax balm infused with raw honey. Heals and protects all day long.</p>
-            <div class="product-bottom">
-              <span class="product-price">$6.99</span>
-              <div class="secure-badge">
-                <svg viewBox="0 0 16 16" fill="currentColor" width="14" height="14"><path d="M8 1a4 4 0 0 0-4 4v2H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V5a4 4 0 0 0-4-4zm2 6H6V5a2 2 0 1 1 4 0v2z"/></svg>
-                <span>Secure Checkout</span>
-              </div>
+            <p>Silky beeswax balm infused with raw honey. Heals and protects all day long.</p>
+            <div class="p-card-footer">
+              <span class="p-card-price">$6.99</span>
+              <span class="p-card-secure"><svg viewBox="0 0 16 16" fill="currentColor" width="12" height="12"><path d="M8 1a4 4 0 00-4 4v2H3a1 1 0 00-1 1v6a1 1 0 001 1h10a1 1 0 001-1V8a1 1 0 00-1-1h-1V5a4 4 0 00-4-4zm2 6H6V5a2 2 0 114 0v2z"/></svg> Secure Checkout</span>
             </div>
           </div>
         </a>
 
-        <a href="products/beeswax.html" class="product-card">
-          <div class="product-image-wrap">
-            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=600&h=600&fit=crop&q=80" alt="Pure golden beeswax blocks" class="product-img product-img-main" loading="lazy">
-            <img src="https://images.unsplash.com/photo-1602928321679-560bb453f190?w=600&h=600&fit=crop&q=80" alt="Beeswax candles on rustic table" class="product-img product-img-hover" loading="lazy">
-            <span class="quick-add btn-glow">Shop Now &rarr;</span>
+        <a href="products/beeswax.html" class="p-card">
+          <div class="p-card-img">
+            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=600&h=600&fit=crop&q=80" alt="Pure beeswax blocks" class="img-main" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1602928321679-560bb453f190?w=600&h=600&fit=crop&q=80" alt="Beeswax candles" class="img-hover" loading="lazy">
+            <span class="p-card-cta btn-glow">Shop Now &rarr;</span>
           </div>
-          <div class="product-info">
-            <span class="product-label">Versatile</span>
+          <div class="p-card-body">
+            <span class="p-card-tag">Versatile</span>
             <h3>Pure Beeswax Block</h3>
-            <p class="product-desc">Food-grade beeswax for candles, crafts, skincare, and wood polish. Sustainably sourced.</p>
-            <div class="product-bottom">
-              <span class="product-price">$9.99</span>
-              <div class="secure-badge">
-                <svg viewBox="0 0 16 16" fill="currentColor" width="14" height="14"><path d="M8 1a4 4 0 0 0-4 4v2H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V5a4 4 0 0 0-4-4zm2 6H6V5a2 2 0 1 1 4 0v2z"/></svg>
-                <span>Secure Checkout</span>
-              </div>
+            <p>Food-grade beeswax for candles, crafts, skincare, and wood polish. Sustainably sourced.</p>
+            <div class="p-card-footer">
+              <span class="p-card-price">$9.99</span>
+              <span class="p-card-secure"><svg viewBox="0 0 16 16" fill="currentColor" width="12" height="12"><path d="M8 1a4 4 0 00-4 4v2H3a1 1 0 00-1 1v6a1 1 0 001 1h10a1 1 0 001-1V8a1 1 0 00-1-1h-1V5a4 4 0 00-4-4zm2 6H6V5a2 2 0 114 0v2z"/></svg> Secure Checkout</span>
             </div>
           </div>
         </a>
@@ -151,84 +160,77 @@
     </div>
   </section>
 
-  <!-- SECTION 5: OUR PROMISE -->
+  <hr class="divider">
+
+  <!-- ============================================================
+       SECTION 5 — OUR PROMISE
+       ============================================================ -->
   <section class="promise" id="promise">
     <div class="container">
-      <p class="section-tag">Our Promise</p>
-      <h2 class="section-title">Why All In Hive</h2>
-      <div class="promise-grid">
-        <div class="promise-card">
-          <div class="promise-icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M16 24l5 5 11-11"/></svg>
-          </div>
+      <div class="section-header">
+        <p class="kicker">Our Promise</p>
+        <h2>Why All In Hive</h2>
+      </div>
+      <div class="promise-row">
+        <div class="promise-item">
+          <div class="promise-num">01</div>
           <h3>100% Raw Honey</h3>
-          <p>Never heated, never blended, never imported. Pure raw honey from our own hives, exactly as the bees made it.</p>
+          <p>Never heated. Never blended. Never imported. Pure raw honey from our own hives, exactly as the bees made it.</p>
         </div>
-        <div class="promise-card">
-          <div class="promise-icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4C24 4 4 16 4 28c0 6.627 8.954 12 20 12s20-5.373 20-12C44 16 24 4 24 4z"/><path d="M24 16v16M16 24h16"/></svg>
-          </div>
+        <div class="promise-item">
+          <div class="promise-num">02</div>
           <h3>Sustainably Sourced</h3>
-          <p>Bee-first beekeeping. We only harvest surplus honey, leaving plenty for the hive. No chemicals, no shortcuts.</p>
+          <p>Bee-first beekeeping. We only harvest surplus honey, leaving plenty for the hive. No chemicals, no shortcuts, no compromises.</p>
         </div>
-        <div class="promise-card">
-          <div class="promise-icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l6 12h14l-11 8 4 14-13-9-13 9 4-14L4 16h14z"/></svg>
-          </div>
+        <div class="promise-item">
+          <div class="promise-num">03</div>
           <h3>Quebec Made</h3>
-          <p>Proudly crafted in Quebec, Canada. Every product is small-batch made with local ingredients and zero additives.</p>
+          <p>Proudly crafted in Quebec, Canada. Every product is small-batch made with local ingredients and absolutely zero additives.</p>
         </div>
       </div>
     </div>
   </section>
+
+  <hr class="divider">
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container contact-grid">
-      <div class="contact-info">
-        <p class="section-tag">Get In Touch</p>
-        <h2 class="section-title">We'd Love to<br>Hear From You</h2>
-        <p>Questions, wholesale, or just want to say hello.</p>
+      <div class="contact-text">
+        <p class="kicker">Get In Touch</p>
+        <h2>We'd Love to<br>Hear From You</h2>
+        <p class="contact-lead">Questions, wholesale, or just want to say hello.</p>
         <div class="contact-details">
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="contact-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>hello@allinhive.com</span>
-          </div>
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="contact-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Quebec, Canada</span>
-          </div>
+          <div class="c-detail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>hello@allinhive.com</span></div>
+          <div class="c-detail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Quebec, Canada</span></div>
         </div>
       </div>
-      <form class="contact-form" onsubmit="event.preventDefault(); document.querySelector('.form-success').style.display='flex'; this.reset();">
-        <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" placeholder="Your name" required></div>
-        <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@example.com" required></div>
-        <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Tell us what you need..." required></textarea></div>
+      <form class="contact-form" onsubmit="event.preventDefault(); document.querySelector('.form-ok').style.display='flex'; this.reset();">
+        <div class="fg"><label for="name">Name</label><input type="text" id="name" placeholder="Your name" required></div>
+        <div class="fg"><label for="email">Email</label><input type="email" id="email" placeholder="you@example.com" required></div>
+        <div class="fg"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Tell us what you need..." required></textarea></div>
         <button type="submit" class="btn btn-yellow btn-full btn-glow">Send Message</button>
-        <div class="form-success" style="display:none;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="success-icon"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <span>Thank you! We'll be in touch soon.</span>
-        </div>
+        <div class="form-ok" style="display:none;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Thank you! We'll be in touch soon.</span></div>
       </form>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-content">
+  <footer class="footer">
+    <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="#"><img src="logo.png" alt="All In Hive logo" class="footer-logo-img"></a>
+        <a href="#"><img src="logo.png" alt="All In Hive" class="footer-logo"></a>
         <p>Pure Quebec raw honey and bee products, small-batch crafted and sustainably harvested.</p>
       </div>
-      <div class="footer-links">
+      <div class="footer-col">
         <h4>Shop</h4>
         <a href="products/honey-jar.html">Creamy Raw Honey</a>
         <a href="products/lip-balm.html">Honey Lip Balm</a>
         <a href="products/beeswax.html">Pure Beeswax</a>
       </div>
-      <div class="footer-links">
+      <div class="footer-col">
         <h4>Company</h4>
-        <a href="#hive-lab">Videos</a>
+        <a href="#proof">Videos</a>
         <a href="#promise">Our Promise</a>
         <a href="#contact">Contact</a>
       </div>
@@ -239,14 +241,13 @@
   </footer>
 
   <script>
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    navToggle.addEventListener('click', () => { navLinks.classList.toggle('active'); navToggle.classList.toggle('active'); });
-    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { navLinks.classList.remove('active'); navToggle.classList.remove('active'); }));
-    window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
-    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', function(e) { e.preventDefault(); const t = document.querySelector(this.getAttribute('href')); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }));
-    const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
-    document.querySelectorAll('.product-card, .promise-card, .video-card, .contact-info, .contact-form').forEach(el => { el.classList.add('fade-in'); obs.observe(el); });
+    const nt=document.getElementById('navToggle'),nl=document.getElementById('navLinks');
+    nt.addEventListener('click',()=>{nl.classList.toggle('active');nt.classList.toggle('active')});
+    nl.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{nl.classList.remove('active');nt.classList.remove('active')}));
+    window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50));
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})}));
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),{threshold:.08});
+    document.querySelectorAll('.p-card,.promise-item,.video-card,.contact-text,.contact-form').forEach(el=>{el.classList.add('reveal');io.observe(el)});
   </script>
 </body>
 </html>

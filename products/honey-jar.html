@@ -7,7 +7,7 @@
   <meta name="description" content="100% raw, unfiltered wildflower honey. Small-batch harvested and sustainably sourced from our apiaries.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="product-page.css">
 </head>
@@ -16,22 +16,20 @@
 
   <!-- NAVBAR -->
   <nav class="navbar scrolled" id="navbar">
-    <div class="container nav-container">
+    <div class="container nav-inner">
       <a href="../index.html" class="nav-logo">
-        <img src="../logo.png" alt="All In Hive logo" class="nav-logo-img">
-        <span class="nav-logo-text">All In Hive</span>
+        <img src="../logo.png" alt="All In Hive" class="nav-logo-img">
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="../index.html#products">Shop</a></li>
-        <li><a href="../index.html#bundle">Bundles</a></li>
-        <li><a href="../index.html#videos">Videos</a></li>
-        <li><a href="../index.html#about">Our Story</a></li>
+        <li><a href="../index.html#collection">Shop</a></li>
+        <li><a href="../index.html#proof">Videos</a></li>
+        <li><a href="../index.html#promise">Our Promise</a></li>
         <li><a href="../index.html#contact">Contact</a></li>
       </ul>
-      <a href="../index.html#products" class="nav-cta">Shop Now</a>
+      <a href="../index.html#collection" class="nav-cta btn-glow">Shop Now</a>
     </div>
   </nav>
 
@@ -40,7 +38,7 @@
     <div class="container">
       <a href="../index.html">Home</a>
       <span class="breadcrumb-sep">/</span>
-      <a href="../index.html#products">Shop</a>
+      <a href="../index.html#collection">Shop</a>
       <span class="breadcrumb-sep">/</span>
       <span>Creamy Raw Honey</span>
     </div>
@@ -71,7 +69,6 @@
       </div>
 
       <div class="product-info-detail">
-        <span class="product-label">Best Seller</span>
         <h1>Creamy Raw Honey</h1>
         <div class="product-rating">
           <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
@@ -110,14 +107,14 @@
           <div class="option-group">
             <label for="quantity">Quantity</label>
             <div class="quantity-selector">
-              <button class="qty-btn" onclick="changeQty(-1)" aria-label="Decrease quantity">−</button>
+              <button class="qty-btn" onclick="changeQty(-1)" aria-label="Decrease quantity">-</button>
               <input type="number" id="quantity" value="1" min="1" max="20" readonly>
               <button class="qty-btn" onclick="changeQty(1)" aria-label="Increase quantity">+</button>
             </div>
           </div>
         </div>
 
-        <button class="btn btn-gold btn-full add-to-cart" onclick="addToCart()">Add to Cart</button>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
         <div class="cart-confirmation" id="cartConfirmation">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
           <span>Added to cart!</span>
@@ -132,31 +129,27 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-content">
+  <footer class="footer">
+    <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="../index.html" class="footer-logo-link">
-          <img src="../logo.png" alt="All In Hive logo" class="footer-logo-img">
-          <span class="footer-logo-text">All In Hive</span>
-        </a>
-        <p>Creamy raw honey and pure bee products, small-batch crafted and sustainably harvested.</p>
+        <a href="../index.html"><img src="../logo.png" alt="All In Hive" class="footer-logo"></a>
+        <p>Pure Quebec raw honey and bee products, small-batch crafted and sustainably harvested.</p>
       </div>
-      <div class="footer-links">
+      <div class="footer-col">
         <h4>Shop</h4>
         <a href="honey-jar.html">Creamy Raw Honey</a>
         <a href="lip-balm.html">Honey Lip Balm</a>
         <a href="beeswax.html">Pure Beeswax</a>
-        <a href="../index.html#bundle">Hive Starter Kit</a>
       </div>
-      <div class="footer-links">
+      <div class="footer-col">
         <h4>Company</h4>
-        <a href="../index.html#about">Our Story</a>
-        <a href="../index.html#videos">Videos</a>
+        <a href="../index.html#proof">Videos</a>
+        <a href="../index.html#promise">Our Promise</a>
         <a href="../index.html#contact">Contact</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>&copy; 2026 All In Hive. All rights reserved.</p>
+      <p>&copy; 2026 All In Hive. All rights reserved. It's All About The Bees.</p>
     </div>
   </footer>
 
